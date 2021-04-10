@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/menu_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:id="@+id/menu_nav"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/menu"
+            android:background="@color/design_default_color_on_primary"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="@string/menu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cherry_swash"
+            android:text="@string/menu"
+            android:textColor="#32746D"
+            android:textSize="30sp"
+            android:layout_margin="5dp" />
+
+        <EditText
+            android:id="@+id/menu_searchbar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nobgbtn"
+            android:padding="10dp"
+            android:layout_marginStart="5dp" />
+
+        <ImageButton
+            android:id="@+id/menu_searchbtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/search"
+            android:background="@color/design_default_color_on_primary"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="@string/search" />
+
+        <ImageButton
+            android:id="@+id/ordersitems"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/orderitems"
+            android:background="@null"
+            android:layout_marginEnd="20dp"
+            android:contentDescription="@string/orders"
+            tools:ignore="HardcodedText" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/menu_navbar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="start"
+        android:background="#32746D"
+        android:visibility="invisible"
+        app:menu="@menu/navmenu" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/menu_toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/menurecycleview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_margin="5dp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="2" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

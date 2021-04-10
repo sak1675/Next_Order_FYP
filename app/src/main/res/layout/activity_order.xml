@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".OrderActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/order_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:id="@+id/order_nav"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/menu"
+            android:background="@color/design_default_color_on_primary"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="@string/menu" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cherry_swash"
+            android:text="@string/orders"
+            android:gravity="center"
+            android:textColor="#32746D"
+            android:textSize="30sp"
+            android:layout_marginStart="10dp" />
+
+        <ImageButton
+            android:id="@+id/orderprofilebtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/profile"
+            android:background="@null"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="profile"
+            tools:ignore="HardcodedText" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/order_navbar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="start"
+        android:background="#32746D"
+        android:visibility="invisible"
+        app:menu="@menu/navmenu" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/order_toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/orderrecycleview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="2" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

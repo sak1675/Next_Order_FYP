@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Next Order</string>
+    <string name="next_order">NEXT ORDER</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="create_account">Create Account</string>
+    <string name="fullname">Fullname</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="i_m_already_a_user_sign_in">
+        "I'm already a User. Sign In"
+    </string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="menu">Menu</string>
+    <string name="search">search</string>
+    <string name="home">Home</string>
+    <string name="orders">Orders</string>
+    <string name="groups">Groups</string>
+    <string name="bill_split">Bill Split</string>
+    <string name="contact">Contact</string>
+    <string name="today_special">Today Special</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="ask_your_question_here">Ask Your Question Here</string>
+    <string name="send">Send</string>
+    <string name="or">OR</string>
+    <string name="reset">Reset Your Password</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="orderlist">OrderList</string>
+    <string name="close">Close</string>
+    <string name="custom_order">Custom Order</string>
+    <string name="order_here">Order Here</string>
+    <string name="bill">Bill</string>
+    <string name="split_bill">Split Bill</string>
+    <string name="pay_single">Pay Single</string>
+    <string name="total_price">Total Price</string>
+    <string name="wati">your order will be ready shortly</string>
+    <string name="todo">TODO</string>
+    <string name="don_t_forget_to_give_revies_on_food">Don’t forget to give revies on food</string>
+    <string name="if_you_have_any_queries_fell_free_to_contact_us">If you have any queries fell free to contact us</string>
+    <string name="please_check_orders_section_to_see_your_order">please check Orders section to see your order</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="status">Status</string>
+
+
+</resources>

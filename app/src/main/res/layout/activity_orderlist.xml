@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderlistActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/orderlist_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:id="@+id/orderlisthome"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/home"
+            android:background="@color/design_default_color_on_primary"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="@string/menu" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cherry_swash"
+            android:text="@string/orderlist"
+            android:gravity="center"
+            android:textColor="#32746D"
+            android:textSize="30sp"
+            android:layout_marginStart="10dp"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/orderlistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orderlist_toolbar"
+        />
+
+
+    <Button
+        android:id="@+id/Orderlist_Order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Order"
+        android:fontFamily="@font/cherry_cream_soda"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:background="#32746D"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/orderlistview"
+        />
+
+</RelativeLayout>
+

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".OrderingActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ordering_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:id="@+id/ordering_nav"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/menu"
+            android:background="@color/design_default_color_on_primary"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="@string/menu" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cherry_swash"
+            android:text="@string/order_here"
+            android:gravity="center"
+            android:textColor="#32746D"
+            android:textSize="30sp"
+            android:layout_marginStart="10dp" />
+
+        <ImageButton
+            android:id="@+id/orderingprofilebtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/profile"
+            android:background="@null"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="profile"
+            tools:ignore="HardcodedText" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/ordering_navbar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="start"
+        android:background="#32746D"
+        android:visibility="invisible"
+        app:menu="@menu/navmenu" />
+
+    <ScrollView
+        android:id="@+id/recyclescrool"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/ordering_toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/orderingrecycleview"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_margin="5dp"
+                android:paddingTop="50dp"
+                android:paddingStart="60dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                android:background="@mipmap/orderbackground"
+                app:spanCount="1" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/customordertitle"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="@string/custom_order"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:layout_below="@id/recyclescrool"
+
+        />
+
+    <EditText
+        android:id="@+id/customordertxt"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/orderhere"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@id/customordertitle" />
+
+    <TextView
+        android:id="@+id/warning"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Warning!! Custom Order can cost money depending on Order"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:textColor="#DC143C"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:layout_below="@id/customordertxt"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/buttonshere"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/warning"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/OrderHere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgbtn"
+            android:fontFamily="@font/roboto_black"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="@string/bill"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:id="@+id/CancleOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nobgbtn"
+            android:fontFamily="@font/roboto_black"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_margin="5dp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "433953765009",
+    "project_id": "next-order-a1897",
+    "storage_bucket": "next-order-a1897.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433953765009:android:f11abf94ce61a222e9f130",
+        "android_client_info": {
+          "package_name": "com.example.nextorder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "433953765009-d3jhpvgmdp4sin29k7ib9gdggfsg2i0h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCh5qNfJBa7HmU6_3yPrdVe18dN1ysMnxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "433953765009-d3jhpvgmdp4sin29k7ib9gdggfsg2i0h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

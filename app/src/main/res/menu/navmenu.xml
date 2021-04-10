@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/navhome"
+        android:title="@string/home"
+        android:icon="@drawable/home"
+        />
+
+    <item android:id="@+id/navOrders"
+        android:title="@string/orders"
+        android:icon="@drawable/orders"
+        />
+
+    <item android:id="@+id/navGroups"
+        android:title="@string/groups"
+        android:icon="@drawable/groups"
+        />
+
+    <item android:id="@+id/navStatus"
+        android:title="@string/status"
+        android:icon="@drawable/status"
+        />
+
+
+    <item android:id="@+id/navContact"
+        android:title="@string/contact"
+        android:icon="@drawable/contact"
+        />
+
+    <item android:id="@+id/navClose"
+        android:title="@string/close"
+        android:icon="@drawable/close"
+        />
+
+</menu>

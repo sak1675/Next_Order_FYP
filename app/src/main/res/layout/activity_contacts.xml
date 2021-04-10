@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactsActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/contact_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:id="@+id/contact_nav"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/menu"
+            android:background="@color/design_default_color_on_primary"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="@string/menu" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cherry_swash"
+            android:text="@string/contact_us"
+            android:gravity="center"
+            android:textColor="#32746D"
+            android:textSize="30sp"
+            android:layout_marginStart="10dp"
+            />
+        <ImageButton
+            android:id="@+id/contactprofilebtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/profile"
+            android:background="@null"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="profile"
+            tools:ignore="HardcodedText" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/contact_navbar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="start"
+        android:background="#32746D"
+        android:visibility="invisible"
+        app:menu="@menu/navmenu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mailus"
+        android:orientation="vertical"
+        android:layout_below="@+id/contact_toolbar"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        >
+
+        <EditText
+            android:id="@+id/contactuxtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="#32746D"
+            android:hint="@string/ask_your_question_here"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textColor="#32746D"
+            android:textColorHint="#32746D" />
+        <android.widget.Button
+            android:id="@+id/contactsend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgbtn"
+            android:text="@string/send"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/mailus"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#32746D"
+        android:textStyle="bold"
+        android:text="@string/or"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/facebook"
+            android:layout_width="70dp"
+            android:layout_height="75dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/facebook" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="70dp"
+            android:layout_height="75dp"
+            android:src="@drawable/mail"
+            android:id="@+id/gmail"
+            android:layout_margin="10dp"
+            />
+    </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

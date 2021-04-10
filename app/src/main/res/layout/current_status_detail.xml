@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/nobgbtn"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+
+            >
+
+
+            <TextView
+                android:id="@+id/statusDishName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="#32746D"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/statusDishPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="#32746D"
+                android:textSize="15sp" />
+
+
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity: "
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="#32746D"
+            android:textSize="15sp"
+            />
+
+        <EditText
+            android:id="@+id/statusQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="#32746D"
+            android:textSize="15sp"
+            android:enabled="false"
+
+            />
+
+    </LinearLayout>
+        <TextView
+            android:id="@+id/statusCustomOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="#32746D"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/statusOrderDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="#32746D"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/statusIdentifier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="#32746D"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/updateOrdersbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/nobgbtn"
+                android:fontFamily="@font/roboto_black"
+                android:text="Update"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:layout_margin="5dp"/>
+
+            <Button
+                android:id="@+id/removeOrdersbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bgbtn"
+                android:fontFamily="@font/roboto_black"
+                android:text="Remove"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
